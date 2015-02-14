@@ -8,4 +8,5 @@
 module.exports = function routes() {
   this.root('pages#main');
   this.match('books', {controller: 'books', action: 'index'});
+  this.resource('account');
 }
